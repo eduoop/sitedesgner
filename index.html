@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Meneses</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="top">
+        <nav>
+            <a href="#" class="logo">EM</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#">Orçamento</a></li>
+            </ul> 
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <div class="header-img">
+            <div class="image-wrapper">
+                <img src="images/pexels-daniel-eliashevsky-6942359.jpg" alt="imagem designer">
+            </div>
+            <div class="banner">
+                <h1>Designer & Motion Designer</h1>
+                <p>Eduardo Meneses</p>
+                <a href="#sobremim"><button>Saiba mais</button></a>
+            </div>
+            <p class="fraseM">"O sucesso é a soma de <br> pequenos esforços repetidos <br> dia após dia" Robert Collier</p>
+        </div>
+    </div>
+
+    
+
+    <section class="about" id="sobremim">
+        <div class="main">
+            <img src="images/pexels-cottonbro-6830888.jpg" alt="Eduardo" data-aos="fade-right">
+            <div class="about-text" data-aos="fade-left">
+                <h1>Sobre mim</h1>
+                <h5>Designer <span> e Motion Designer </span></h5>
+                <p>Olá, meu nome é Eduardo, moro em São josé do goiabal MG. A um ano e meio estudo softwares de edição de fotos e videos. Sempre tive interesse nessa área, mais até então nunca tinha mechido em qualquer ferramenta, e foi aí que tudo começou. Eu crio flyers, videos animados, cardápios, thumbnail, dentre outros...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="scontainer" id="projetos">
+        <div class="slide-text-left" data-aos="fade-left">
+            <h1>Algumas <br class="brocult"> das <br class="brocult"> minhas <br class="brocult"> artes </h1>
+        </div>
+
+        <div class="slide-text-right" data-aos="fade-right">
+            <h1>E tem bem <br class="brocult"> mais no <br class="brocult"> meu <a href="https://www.instagram.com/duumotion/" target="_blank">insta</a></h1>
+        </div>
+
+        <div class="slide-container">
+            <div class="img-container">
+                <img src="images/slides/academia flyer.png" id="content1" class="active">
+                <img src="images/slides/hamburguer minimalista.png" id="content2">
+                <img src="images/slides/Sem Título-1 (1).png" id="content3">
+                <img src="images/slides/hamburguer para ae.png"id="content4">
+            </div>
+
+            <div class="dot-container">
+                <button onclick="dot(1)"></button>
+                <button onclick="dot(2)"></button>
+                <button onclick="dot(3)"></button>
+                <button onclick="dot(4)"></button>
+            </div>
+
+            <button id="prev" onclick="prev()"><i class="fas fa-chevron-left"></i></button>
+            <button id="next" onclick="next()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section class="sessao-orcamento">
+        <div class="orcamento-wrapper">
+            <h1>Simular orçamento</h1>
+            <form>
+                <label for="qtde">Quantidade de artes</label>
+                <input type="number" name="qtde" id="qtde">
+
+                <label for="animete">Arte animada</label>
+                <input type="checkbox" name="animete" id="animete">
+
+                <label for="prazo">Prazo</label>
+                <input type="range" name="prazo" min="1" max="5" id="prazo">
+
+                <label id="preco">R$ 0,00</label>
+
+                <button class="btn-orcamento"> Reset </button>
+            </form>
+        </div>
+    </section>
+
+        <div class="contact" id="contato">
+            <div class="contact-container" data-aos="fade-down">
+                <p><span class="bord"></span> Entre em contato comigo</p>
+                <a href="https://wa.me/5531982623783" class="link-contact-wpp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp </a>
+                <a href="https://t.me/eduomp" class="link-contact-inst" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram </a>
+            </div>
+        </div>
+
+       <footer>
+            <div class="footer-botton">
+                <p>copyright &copy;2021 Eduardo M. Site por <span>Eduardo Meneses</span></p> 
+                <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <a href="#top" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700
+        });
+    </script>
+    <script src="js-mobile.js"></script>
+    <script src="https://kit.fontawesome.com/206b026162.js" crossorigin="anonymous"></script>
+</body>
+</html>
